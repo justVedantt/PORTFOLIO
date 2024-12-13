@@ -1,0 +1,33 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    section {
+        margin: 0 5rem;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+    .project-containers {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        margin: 0 2rem;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+    }
+    .skills-card {
+        width: 100%;
+    }
+    .about-containers {
+        flex-direction: column;
+    }
+}

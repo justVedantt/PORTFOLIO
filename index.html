@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+<nav id="desktop-nav">
+<div class="logo">Vedant Pawar</div>
+<div class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#Skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</div>
+</nav>
+<nav id="hamburger-nav">
+<div class="logo">Vedant Pawar</div>
+<div class="hamburger-menu">
+<div class="hamburger-icon" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="menu-links">
+<li><a href="#about" onclick="toggleMenu()">About</a></li>
+<li><a href="#Skills" onclick="toggleMenu()">Experience</a></li>
+<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+</div>
+</div>
+</nav>
+<section id="profile">
+<div class="section__pic-container">
+<img src="./assets/profile-pic.png" alt="Vedant Pawar profile picture">
+</div>
+<div class="section__text">
+<p class="section__text__p1">Hello, I'm</p>
+<h1 class="title">Vedant Pawar</h1>
+<p class="section__text__p2">Backend Developer</p>
+<div class="btn-container">
+<button class="btn btn-color-2" onclick="window.open('./assets/Vedant-Resume.pdf')">Download CV</button>
+<button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+</div>
+<div id="socials-container">
+<img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/vedantpawar28'">
+<img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/justVedantt'">
+</div>
+</div>
+</section>
+<section id="about">
+<p class="section__text__p1">Get To Know More</p>
+<h1 class="title">About Me</h1>
+<div class="section-container">
+<div class="section__pic-container">
+<img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+</div>
+<div class="about-details-container">
+<div class="about-containers">
+<div class="details-container">
+<img src="./assets/Skills.png" alt="Experience Icon" class="icon">
+<h3>Skills</h3>
+<p>Fresher <br>Backend Development</p>
+</div>
+<div class="details-container">
+<img src="./assets/education.png" alt="Education Icon" class="icon">
+<h3>Education</h3>
+<p>B.E. CSE</p>
+</div>
+</div>
+<div class="text-container">
+<p>I'm a passionate backend developer with a strong foundation in computer science. I'm always eager to learn new technologies and improve my skills. I thrive in collaborative environments and enjoy solving complex problems. Whether it's optimizing existing systems or building new features from scratch, I'm dedicated to creating efficient and scalable solutions. I'm excited to contribute to innovative projects and grow alongside a dynamic team.</p>
+</div>
+</div>
+</div>
+<img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#Skills'">
+</section>
+<section id="Skills">
+<p class="section__text__p1">Explore My</p>
+<h1 class="title">Technical Skills</h1>
+<div class="Skills-containers">
+<div class="skills-container">
+<div class="skills-card">
+<img src="./assets/checkmark.png" alt="Languages Icon" class="icon">
+<h3>Programming Languages</h3>
+<div class="skill-list">
+<span>C</span>
+<span>C++</span>
+<span>Java</span>
+<span>Kotlin</span>
+<span>Python</span>
+<span>JavaScript</span>
+</div>
+</div>
+<div class="skills-card">
+<img src="./assets/checkmark.png" alt="Web Icon" class="icon">
+<h3>Web Technologies</h3>
+<div class="skill-list">
+<span>HTML</span>
+<span>CSS</span>
+<span>SQL</span>
+<span>APIs</span>
+<span>AWS</span>
+</div>
+</div>
+</div>
+</div>
+<img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+<section id="projects">
+<p class="section__text__p1">Browse My Recent</p>
+<h1 class="title">Projects</h1>
+<div class="project-containers">
+<div class="project-card">
+<h3>Arduino Based Secure Door Lock</h3>
+<p>A secure door lock system with keypad password authentication and smart device integration for seamless automation.</p>
+<p class1="tech-used">Tech Stack: Arduino, I2C modules, Servo Motor</p>
+</div>
+<div class="project-card">
+<h3>Library Management System</h3>
+<p>User-friendly interface for searching and managing books, journals, and materials.</p>
+<p class="tech-used">Tech Stack: SQL, MySQL</p>
+</div>
+<div class="project-card">
+<h3>Inventory Management System</h3>
+<p>Integrated supply chain system with demand forecasting and real-time management.</p>
+<p class="tech-used">Tech Stack: HTML, CSS, PHP, JavaScript, Python, SQL</p>
+</div>
+</div>
+<img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-container">
+        <div class="contact-details">
+            <div class="contact-info">
+                <img src="./assets/email.png" alt="Email Icon" class="icon">
+                <p>vedantpofficial@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <img src="./assets/phone.png" alt="Phone Icon" class="icon">
+                <p>+91 9713021377</p>
+            </div>
+            <div class="contact-info">
+                <img src="./assets/location.png" alt="Location Icon" class="icon">
+                <p>Bhopal, Madhya Pradesh</p>
+            </div>
+            <div class="contact-info">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon">
+                <a href="https://www.linkedin.com/in/vedantpawar28" target="_blank">www.linkedin.com/in/vedantpawar28</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
